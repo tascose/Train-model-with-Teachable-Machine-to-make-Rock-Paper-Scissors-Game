@@ -1,3 +1,5 @@
+File Keras và label các bạn có thể lên Teachable Machine để train lại và điều chỉnh theo bài của mình nhé. Model mình train nó chưa được tốt lắm nhưng có thể lấy file để chạy Demo nha
+
 Để chạy được các code này các bạn hãy import các thư viện liên quan nhé
 
 pip install opencv-python
