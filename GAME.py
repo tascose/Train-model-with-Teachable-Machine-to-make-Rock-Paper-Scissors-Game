@@ -139,9 +139,9 @@ while current_round <= total_rounds:
                 70)  # User ở bên phải, gần sát trên cùng
     result_pos = (frame_width // 2 - cv2.getTextSize(result_text, cv2.FONT_HERSHEY_SIMPLEX, 0.7, 2)[0][0] // 2,
                   frame_height - 60)  # Kết quả ở dưới cùng giữa trên User và AI score
-    ai_score_pos = (frame_width - cv2.getTextSize(ai_score_text, cv2.FONT_HERSHEY_SIMPLEX, 0.7, 2)[0][0] - 10,
-                    frame_height - 30)  # AI score ở góc dưới bên phải
-    user_score_pos = (10, frame_height - 30)  # User score ở góc dưới bên trái
+    user_score_pos = (frame_width - cv2.getTextSize(user_score_text, cv2.FONT_HERSHEY_SIMPLEX, 0.7, 2)[0][0] - 10,
+                    frame_height - 30)  # User score ở góc dưới bên phải
+    ai_score_pos = (10, frame_height - 30)  # AI score ở góc dưới bên trái
 
     # Hiển thị các văn bản trên màn hình
     cv2.putText(frame, round_text, round_pos, cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2)
